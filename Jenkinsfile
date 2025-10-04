@@ -1,21 +1,17 @@
-pipeline(
+pipeline {
     agent any
 
-    stage{
-        
-        stage('build'){
-            steps{
-                script{
-                    echo "build in progress"
-                }
+    stages {
+        stage('Build') {
+            steps {
+                echo "Build in progress"
             }
         }
-        stage('test'){
-            steps{
-                script{
-                    echo "test in progress"
-                }
+
+        stage('Test') {
+            steps {
+                echo "Test in progress"
             }
         }
     }
-)
+}
