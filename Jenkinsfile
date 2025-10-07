@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'aws-agent' }  // Use the correct label for your EC2 agent
+    agent { label 'aws-agent' }
     tools {
         jdk 'JDK17'
         maven 'Maven3'
